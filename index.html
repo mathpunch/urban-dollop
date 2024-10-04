@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathPunch - Unblocked Games</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 20px;
+            cursor: pointer;
+        }
+        iframe {
+            width: 80%;
+            height: 600px;
+            border: none;
+            display: none; /* Hidden initially */
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to MathPunch!</h1>
+    <p>Click the button below to play Stickman Hook.</p>
+    <button id="loadGame">Play Stickman Hook</button>
+    <iframe id="gameFrame" src="https://mathpunch.github.io/kitty/"></iframe>
+
+    <script>
+        document.getElementById('loadGame').onclick = function() {
+            const frame = document.getElementById('gameFrame');
+            frame.style.display = 'block'; // Show the iframe when the button is clicked
+            frame.src = frame.src; // Reload the game
+        };
+    </script>
+</body>
+</html>
